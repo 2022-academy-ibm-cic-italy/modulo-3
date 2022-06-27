@@ -34,5 +34,22 @@ public class Main {
 
         System.out.println(book);
         service.insertBook(book);
+
+        //Esercizio 1
+        //select
+        Book book2 = service.select("12345");
+        System.out.println(book2);
+
+        //Esercizio 2
+        //Update libro con ISBN 12345
+        Book book3 = service.select("12345");
+        book3.setBookName("Nuovo Titolo");
+        book3.getPublisher().setPublisherName("NUOVO NUMERO");
+
+        service.update(book3);
+        System.out.println(book3);
+
+        //Esercizio 3
+        service.delete(book3);
     }
 }
