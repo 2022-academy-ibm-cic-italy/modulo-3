@@ -1,0 +1,15 @@
+show databases;
+
+create database contact
+
+use contact
+
+create table contact (
+	ID INT NOT NULL AUTO_INCREMENT,
+	NAME VARCHAR(100) NOT NULL,
+	SURNAME VARCHAR(100) NOT NULL,
+	EMAIL VARCHAR(100) NOT NULL,
+	ADDRESS VARCHAR(100) NOT NULL,
+	PHONE VARCHAR(100) NOT NULL,
+	PRIMARY KEY (ID)
+)
