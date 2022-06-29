@@ -17,11 +17,11 @@ public class Main {
     }
 
     public void findAllCar() {
-        List<Car> cars = entityManager.createQuery("select c from CARS").getResultList();
+        List<Car> cars = entityManager.createQuery("from CARS", Car.class).getResultList();
     }
 
     public void delete(Car car) {
-        entityManager.detach(car); //chiave primaria dentro oggetto
+        entityManager.remove(car); //chiave primaria dentro oggetto
     }
 
 }
