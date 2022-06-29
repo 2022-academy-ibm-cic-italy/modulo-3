@@ -17,7 +17,7 @@ public class Main {
     }
 
     public void findAllCar() {
-        List<Car> cars = entityManager.createQuery("select * from Cars car").getResultList();
+        List<Car> cars = entityManager.createQuery("select c from CARS").getResultList();
     }
 
     public void delete(Car car) {
