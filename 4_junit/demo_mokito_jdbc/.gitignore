@@ -1,0 +1,12 @@
+target/
+.settings/
+*.log
+*.aux
+*.out
+*.synctex.gz
+*.toc
+*.vrb
+*.snm
+*.nav
+*.iml
+.idea/
